@@ -265,7 +265,7 @@ input.search-form:hover {
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
-  background: #151515;
+  background: #142f5c;
   padding: 15px 0;
   padding-bottom: 0;
 }
@@ -820,7 +820,7 @@ input.search-form:hover {
 }
 
 .panel-heading.active{
-  background: #1f1f20;
+  background: #223d80;
 }
 
 .panel-heading.active .panel-title>a{
@@ -876,7 +876,7 @@ a.accordion-toggle  i{
 }
 
 .nav-tabs>li>a:hover{
-  background: #1f1f20;
+  background: #223d80;
   color:#fff;
 }
 
@@ -885,7 +885,7 @@ a.accordion-toggle  i{
 .nav-tabs>li.active>a:focus {
   border: 0;
   color:#fff;
-  background: #1f1f20;
+  background: #223d80;
   position: relative;
 }
 
@@ -895,7 +895,7 @@ a.accordion-toggle  i{
   width: auto;
   height: auto;
   border-style:solid;
-  border-color: transparent transparent transparent #1f1f20;
+  border-color: transparent transparent transparent #223d80;
   border-width: 25px 22px;
   right: -44px;
   top:0;
@@ -1519,7 +1519,7 @@ ul.social_icons li  a i{
 }
 
 .footer {
-  background: none repeat scroll 0 0 #2E2E2E;
+  background: none repeat scroll 0 0 #374956;
   border-top: 5px solid #C52D2F;
   height: 84px;
   margin-top: 110px;
@@ -2503,7 +2503,7 @@ shortcodes page css
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
-  background: #2e2e2e;
+  background: #374956;
 }
 
 #footer a {
@@ -2524,6 +2524,82 @@ shortcodes page css
   display: inline-block;
   margin-left: 15px;
 }
+
+/*para menu */
+
+.red_social {
+  position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: 0; /* Establecemos la barra en la izquierda */
+  top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+  .red_social ul {
+    list-style: none;
+  }
+
+  .red_social ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+  }
+
+  .red_social ul li .fa-facebook {background:#3b5998;} /* Establecemos los colores de cada red red_social, aprovechando su class */
+  .red_social ul li .fa-twitter {background: #00abf0;}
+  .red_social ul li .fa-linkedin {background: #d95232;}
+  .red_social ul li .fa-dribbble {background: #ae181f;}
+  .red_social ul li .fa-skype {background: #666666;}
+
+  .red_social ul li a:hover {
+    background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+  }
+
+  /* menu */
+
+#templatemo_menu {
+  width: 235px;
+  margin-bottom: 20px;
+}
+
+#templatemo_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#templatemo_menu ul li {
+  padding: 10px 0 0;
+  margin: 0;
+  display: block;
+  height: 36px;
+  /*background: url(../images/templatemo_menu_divider.jpg) left bottom no-repeat*/
+}
+
+#templatemo_menu ul li a {
+  display: block;
+  height: 36px;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  color: #000000; 
+  text-decoration: none;
+  font-weight: normal;
+  outline: none;
+  border: none;
+}
+
+#templatemo_menu ul li a:hover, #templatemo_menu ul .current {
+  padding-left: 60px;
+  color: #000000;
+  background: url(../images/templatemo_menu_hover.png) left top no-repeat
+}
+
+/* end of menu */
 
 
 

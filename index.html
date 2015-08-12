@@ -13,37 +13,44 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/preload.css" media="all" />
+
+    <script src="js/modernizr-2.8.3.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script type="text/javascript">
+            $(document).on("ready", inicio);
+
+            function inicio() {
+            setTimeout(function(){
+                  $('#loader-wrapper').fadeOut();
+                }, 3500);
+            }
+        </script>
 </head><!--/head-->
 
 <body>
-    <header id="header">
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
-                    </div>
-                    <div class="col-sm-6 col-xs-8">
-                       <div class="social">
-                            <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                            </ul>
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                           </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
 
+    <div class="red_social">
+        <ul>
+            <li><a href="http://www.facebook.com/falconmasters" target="_blank" class="fa fa-facebook"></a></li>
+            <li><a href="http://www.twitter.com/falconmasters" target="_blank" class="fa fa-twitter"></a></li>
+            <li><a href="http://www.googleplus.com/falconmasters" target="_blank" class="fa fa-linkedin"></a></li>
+            <li><a href="http://www.pinterest.com/falconmasters" target="_blank" class="fa fa-dribbble"></a></li>
+            <li><a href="mailto:contacto@falconmasters.com" class="fa fa-skype"></a></li>
+        </ul>
+    </div>
+    <header id="header">
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -199,12 +206,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script>
 </body>
 </html>
